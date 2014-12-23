@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta name="google-site-verification" content="B-wv6xomIN37im_lo0o-xwXHaao9CPUTpvcifWRB1u8" />
+<meta name="description" content="Locals helping Miami open their data and create meaningful web and mobile apps" />
+<meta name="Keywords" content="Code, Miami, Civic hacking" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!--<meta http-equiv="refresh" content="30" />-->
+<meta name="author" content="The Code for Miami Group" />
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/js/bootstrap.min.js"></script>
+<script src="http://www.codeformiami.org/js/bootstrap-tooltip.js"></script>
+<script src="http://www.codeformiami.org/js/script.js"></script>
+<link rel="shortcut icon" href="http://www.codeformiami.org/favicon.ico" />
+<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/css/bootstrap-combined.min.css" rel="stylesheet" />
+<link href="css/style.css" rel="stylesheet" />
+
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<title>Code Across 2015 | Code for Miami</title>
+
+</head>
+<body>
+
+<header>
+    <nav class="navbar-wrapper">
+        <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+        <div class="container">
+            <div class="navbar navbar-inverse">
+                <div class="navbar-inner">
+                    <!-- Responsive Navbar Part 1: Button for triggering responsive navbar. Include responsive CSS to utilize. -->
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand" href="#"><span class="c4mred">Code</span> <span class="c4mblue">For Miami</span></a>
+                    <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li class="active"><a href="/">Home</a></li>
+                            <li><a href="http://codeformia.tumblr.com">Blog</a></li>
+                            <li class="dropdown" id="menu-events">
+                                <a href="#menu-events" class="dropdown-toggle" data-toggle="dropdown">Events<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="http://www.meetup.com/Code-for-Miami/"><i class="icon-calendar"></i> Our Meetup</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown" id="menu-contact">
+                                <a href="#menu-contact" class="dropdown-toggle" data-toggle="dropdown">Contact<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#contact"><i class="icon-pencil"></i> Email Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://eepurl.com/N_QIT"><i class="icon-envelope"></i> Email Newsletter</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
+                            <li class="dropdown" id="menu-resources">
+                                <a href="#menu-resources" class="dropdown-toggle" data-toggle="dropdown">Resources<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="http://cfmi-live.poplar.phl.io/"><i class="icon-wrench"></i> Our Projects Page (BETA)</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://skymob.co/rooms/zsxbvw"><i class="icon-comment"></i> Our Chat Room (BETA)</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/Code-for-Miami/codeofconduct"><i class="icon-wrench"></i> Code of Conduct</a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a href="https://facebook.com/codeformiami"><i class="icon-comment"></i> Our Facebook Page</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://groups.google.com/forum/#!forum/code-for-miami"><i class="icon-comment"></i> Our Google Groups Forum</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.meetup.com/code-for-miami/"><i class="icon-user"></i> Our Gatherings on Meetup</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://twitter.com/codeformiami"><i class="icon-retweet"></i> Our Twitter Account (@codeformiami)</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/code-for-miami"><i class="icon-wrench"></i> Our Code on GitHub</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://codeformiami.uservoice.com/"><i class="icon-thumbs-up"></i> Idea List for Civic Apps and Open Data</a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a href="https://twitter.com/search?q=%23cfabrigade"><i class="icon-retweet"></i> #cfabrigade - National Tweets</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown" id="menu-projects">
+                                <a href="http://projects.codeformiami.org/">Projects (BETA)</a>
+                            </li>
+                        </ul>
+                        <ul class="nav pull-right language-menu">
+                            <li class="divider-vertical"></li>
+                            <li>
+                                <a href="http://es.codeformiami.org">Español</a>
+                            </li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </div><!-- /.navbar-inner -->
+            </div><!-- /.navbar -->
+        </div> <!-- /.container -->
+    </nav><!-- /.navbar-wrapper -->
+
+
+    <!-- fork me banner, top right
+    ================================================== -->
+    <a class="forkme" href="https://github.com/Code-for-Miami/code-for-miami.github.io"><img style="position: absolute; top: 0; right: 0; border: 0; z-index: 100;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
+
+    <!-- Carousel - only using one at the moment
+    ================================================== -->
+    <div class="carousel slide">
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="http://www.codeformiami.org/images/carousel/Miami1.jpg" alt="MacArthur Causeway | Miami" />
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>We Are Code For Miami.</h1>
+                        <p class="lead">
+                            Come join developers, designers, data geeks, leaders, and idea-makers who volunteer to help Miami-Dade government and civic orgs adopt open web technologies.
+                        </p>
+                        <a class="btn btn-large btn-primary" href="http://www.meetup.com/Code-for-Miami/">Stop By Our Meetups</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="http://www.codeformiami.org/images/carousel/Miami2.jpg" alt="American Airlines Arena | Downtown Miami" />
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Join the Movement.</h1>
+                        <p class="lead">
+                            We are looking for creatives, developers, designers and writers to support our movement.
+                        </p>
+                        <a class="btn btn-large btn-primary" href="http://www.meetup.com/Code-for-Miami/">Stop By Our Meetups</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="http://www.codeformiami.org/images/carousel/Miami3.jpg" alt="Downtown Miami Skyline" />
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Want to Learn More?</h1>
+                        <p class="lead">
+                            We meet weekly at The Lab Miami in Wynwood.
+                        </p>
+                        <a class="btn btn-large btn-primary" href="http://www.meetup.com/Code-for-Miami/">Stop By Our Meetups</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- /.carousel -->
+</header>
+<div class="container marketing clearleft">
+
+<!-- Marketing messaging and featurettes
+================================================== -->
+<!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="row well well-large">
+      <h1 class="c4mblue">Code Across 2015</h1>
+      <p class="c4mred"><strong>Saturday, February 21st @ 10:00AM!</strong></p>
+      <p>CodeAcross is a weekend of civic hacking events hosted by nodes of the Code for America network around the world. CodeAcross is timed to coincide with both the last weekend of the Code for America Fellows residency and International Open Data Day. The theme for CodeAcross 2015 is Principles for 21st Century Government. Who should get involved? Urbanists, civic hackers, government staff, developers, designers, community organizers, and anyone with the passion to make their city better.</p>
+      <p>Location: TBA</p>
+      <p>More info coming soon!</p>
+    </div>
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+        <div class="span4">
+            <img src="http://www.codeformiami.org/images/captain.png" alt="CfA Brigade Captain" />
+            <h2>Come To Our Meetups</h2>
+            <p>
+                A casual <a href="http://www.meetup.com/Code-for-Miami/">meetup</a>, usually weekly, meeting at the LAB Miami in Wynwood.
+            </p>
+            <p>
+                <a class="btn" href="#meetup">View details &raquo;</a>
+            </p>
+        </div><!-- /.span4 -->
+        <div class="span4">
+            <img src="http://www.codeformiami.org/images/community.png" alt="Community" />
+            <h2>Join Online Discussions</h2>
+            <p>
+                <a href="https://groups.google.com/forum/#!forum/code-for-miami">An open conversation online</a> about what we're doing now and what's next.
+            </p>
+            <p>
+                <a class="btn" href="#groups">View details &raquo;</a>
+            </p>
+        </div><!-- /.span4 -->
+        <div class="span4">
+            <img src="http://www.codeformiami.org/images/cfa_logo_greyscale.png" alt="Code for America" />
+            <h2>See Our Inspiration</h2>
+            <p>
+                <a href="http://codeforamerica.org/">Code for America</a> is the organization that helped inspire many of us that we can change our City.
+            </p>
+            <p>
+                <a class="btn" href="#cfa">View details &raquo;</a>
+            </p>
+        </div><!-- /.span4 -->
+    </div><!-- /.row -->
+
+<footer>
+    <p class="pull-right"><a href="#">Back to top</a></p>
+    <p>
+      Built and Maintained by Code for Miami, people trying to make Miami-Dade County even better. (Hey that's us.) Some images provided by <a href="http://thenounproject.com">The Noun Project</a> and <a href="http://aerostylaz.deviantart.com/gallery/?q=miami">Aerostylaz</a>.
+    </p>
+</footer>
+</div><!-- /.container -->
+
+</body>
+</html>
