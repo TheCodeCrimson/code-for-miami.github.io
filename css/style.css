@@ -15,6 +15,14 @@ body {
 .c4mblue { color: #399fd3; }
 .c4mred { color: #cf1b41; }
 
+/* Bootstrap is dumb... */
+
+@media all and (min-width: 768px) {
+  .span4 {
+    max-width: 30%;
+  }
+}
+
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 
