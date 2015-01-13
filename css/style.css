@@ -4,6 +4,7 @@
 /* Padding below the footer and lighter body text */
 
 body {
+  font-size: 1em;
   padding-bottom: 40px;
   color: #5a5a5a;
 }
